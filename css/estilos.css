@@ -1,0 +1,431 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    /* Esto hace que todas las cajas sean iguales */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+}
+
+nav h1 {
+    font-size: 2rem;
+}
+
+nav {
+    padding: 0.5rem;
+    /* background-color: rgb(10, 187, 181); */
+    background-color: rgb(58, 203, 198);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header p {
+    /* font-family: 'Dancing Script', 'Segoe Script'; */
+    color: rgb(58, 203, 198);
+    font-weight: bold;
+    line-height: 0.5;
+}
+
+.img-header {
+    margin: 0.2rem;
+    max-width: 30%;
+}
+
+main {
+    padding: 1rem;
+}
+
+img {
+    padding: 1rem;
+    max-width: 99%;
+}
+
+h1 {
+    font-size: 3rem;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Dancing Script', 'Segoe Script';
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+.menu-circulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 2%;
+}
+
+.img-menu-circulo {
+    border: solid 2px;
+    color: rgb(106, 219, 217);
+    padding: 3px;
+    border-radius: 100%;
+    max-width: 75px;
+    margin: 2px;
+}
+
+.menu-circulo a {
+    text-decoration: none;
+    color: black;
+}
+
+.cont-flecha {
+    display: flex;
+    justify-content: right;
+}
+
+.flecha-arriba {
+    max-width: 50px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.vistos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+}
+
+.img-producto {
+    border: none;
+    border-radius: 20%;
+}
+
+.cont-btn-2col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* .entrada-blog a.comprar { */
+.comprar {
+    background-color: rgb(58, 203, 198);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    background-color: rgb(58, 203, 198);
+    line-height: 0.5;
+}
+
+
+@media (max-width: 480px) {
+    .dos-columnas {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+@media (min-width: 480px) {
+    .dos-columnas {
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        justify-content: center;
+        max-width: 800px;
+    }
+}
+
+/* Estilos Más Productos */
+.mas-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 2%;
+}
+
+.img-mas-productos {
+    border: solid 3px;
+    color: rgb(106, 219, 217);
+    padding: 4px;
+    margin: 2px;
+    border-radius: 100%;
+    max-width: 100px;
+}
+
+.mas-productos a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Fin Estilos Más Productos */
+
+/* Estilos Almohadas */
+.cont-img-principal {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.img-prod-principal {
+    justify-content: center;
+}
+
+.img-prod-principal img {
+    min-width: 200px;
+    border: none;
+    border-radius: 20%;
+    padding: 10%;
+}
+
+.img-seleccion {
+    display: flex;
+    flex-direction: column;
+    max-width: 100px;
+    min-width: 50%;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 10%;
+
+}
+
+.img-seleccion img {
+    border: none;
+    border-radius: 25%;
+    border: solid 2px;
+    color: rgb(106, 219, 217);
+    padding: 3px;
+    margin: 2px;
+}
+
+/* Pantallas de Celular */
+@media (max-width: 480px) {
+    .cont-img-seleccion {
+        max-height: 250px;
+
+    }
+}
+
+/* Pantallas de Tables y Netbooks */
+@media (min-width: 480px) {
+    .cont-img-seleccion {
+        max-height: 500px;
+    }
+}
+
+/* Pantallas de Tables y Netbooks */
+@media (min-width: 800px) {
+    .cont-img-seleccion {
+        max-height: 700px;
+    }
+}
+
+/* fin Estilos Almohadas */
+
+/* Presentacion */
+.img-quien-soy {
+    display: flex;
+    justify-content: center;
+}
+
+.presentacion p {
+    font-family: 'Dancing Script', 'Segoe Script';
+    font-size: 2rem;
+}
+
+@media (max-width: 480px) {
+    .dos-col-presentacion {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .dos-col-presentacion {
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        justify-content: center;
+        max-width: 800px;
+    }
+
+    .img-quien-soy {
+        max-height: 450px;
+    }
+}
+
+/* Fin  Presentacion */
+
+/* 5 Motivos para elegir un Regalo Personalizado */
+
+.cont-personalizado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Fin 5 Motivos */
+
+/* Enlace Estirado */
+.enlace-estirado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cont-enl-estirado {
+    display: flex;
+    border-radius: 10px;
+    border: solid 1px;
+    color: rgb(180, 180, 180);
+    padding: 2px;
+    margin: 3px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.cont-enl-estirado h2, h4{
+    color: black;
+}
+
+.img-enl-estirado {
+    max-width: 150px;
+}
+
+.enlace-estirado h2,
+h4 {
+    text-align: left;
+    text-align: justify;
+}
+
+.ver-mas {
+    background-color: rgb(106, 219, 217);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+    .img-enl-estirado {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+/* Fin Enlace Estirado */
+
+
+/* Productos en 3 columnas */
+
+.img-3-col {
+    max-width: 75px;
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+    .prod-3-col {
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(3, 1fr);
+        /* column-gap: 1rem; */
+        justify-content: center;
+    }
+
+    .prod-3-col a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+
+    .tarjeta-3-col {
+        border: solid 1px;
+        color: rgb(180, 180, 180);
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    .img-3-col {
+        max-width: 80px;
+        justify-content: center;
+    }
+}
+
+
+@media (min-width: 600px) {
+    .prod-3-col {
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(3, 1fr);
+        /* column-gap: 1rem; */
+        justify-content: center;
+        max-width: 800px;
+    }
+
+    .prod-3-col a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+
+    .tarjeta-3-col {
+        border: solid 1px;
+        color: rgb(180, 180, 180);
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    .img-3-col {
+        max-width: 150px;
+        justify-content: center;
+    }
+}
+
+/* Fin Productos en 3 columnas */
