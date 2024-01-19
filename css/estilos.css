@@ -50,7 +50,7 @@ h1 {
     font-size: 3rem;
     justify-content: center;
     text-align: center;
-    font-family: 'Dancing Script', 'Segoe Script';
+    font-family: 'Dancing Script', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h2 {
@@ -155,8 +155,23 @@ footer {
     color: white;
     background-color: rgb(58, 203, 198);
     line-height: 0.5;
+    font-size: 1rem;
 }
 
+.entrada-blog {
+    border: solid 1px;
+    color: rgb(180, 180, 180);
+    border-radius: 10px;
+    padding: 3px;
+    margin: 10px;
+}
+
+.entrada-blog a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
 
 @media (max-width: 480px) {
     .dos-columnas {
@@ -164,7 +179,7 @@ footer {
         justify-content: center;
         text-align: center;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 3rem;
+        column-gap: 1rem;
     }
 }
 
@@ -173,7 +188,7 @@ footer {
         display: grid;
         text-align: center;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 3rem;
+        column-gap: 2rem;
         justify-content: center;
         max-width: 800px;
     }
@@ -205,6 +220,7 @@ footer {
 .mas-productos h4 {
     text-align: center;
 }
+
 /* Fin Estilos Más Productos */
 
 /* Estilos Almohadas */
@@ -223,6 +239,12 @@ footer {
     border: none;
     border-radius: 20%;
     padding: 10%;
+    transition: all 300ms;
+    /* position: relative; */
+}
+
+.img-prod-principal img:hover {
+    transform: scale(1.3);
 }
 
 .img-seleccion {
@@ -248,7 +270,6 @@ footer {
 @media (max-width: 480px) {
     .cont-img-seleccion {
         max-height: 250px;
-
     }
 }
 
@@ -272,10 +293,14 @@ footer {
 .img-quien-soy {
     display: flex;
     justify-content: center;
+    background-color: rgb(106, 219, 217);
+    border: none;
+    border-radius: 10px;
+    padding: 3px;
 }
 
 .presentacion p {
-    font-family: 'Dancing Script', 'Segoe Script';
+    font-family: 'Dancing Script', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2rem;
 }
 
@@ -301,6 +326,10 @@ footer {
 
     .img-quien-soy {
         max-height: 450px;
+        background-color: rgb(106, 219, 217);
+        border: none;
+        border-radius: 10px;
+        padding: 3px;
     }
 }
 
@@ -334,7 +363,8 @@ footer {
     min-width: 100%;
 }
 
-.cont-enl-estirado h2, h4{
+.cont-enl-estirado h2,
+h4 {
     color: black;
 }
 
@@ -381,12 +411,12 @@ h4 {
     .prod-3-col {
         display: grid;
         text-align: center;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 1rem;
+        grid-template-columns: repeat(3, 0.5fr);
+        column-gap: 0.5rem;
         justify-content: center;
     }
 
-    .prod-3-col a{
+    .prod-3-col a {
         text-decoration: none;
         color: rgb(0, 0, 0);
     }
@@ -394,12 +424,12 @@ h4 {
     .tarjeta-3-col {
         border: solid 1px;
         color: rgb(180, 180, 180);
-        margin: 10px;
+        margin: 5px;
         border-radius: 10px;
     }
 
     .img-3-col {
-        max-width: 80px;
+        max-width: 100px;
         justify-content: center;
     }
 }
@@ -414,7 +444,7 @@ h4 {
         max-width: 800px;
     }
 
-    .prod-3-col a{
+    .prod-3-col a {
         text-decoration: none;
         color: rgb(0, 0, 0);
     }
