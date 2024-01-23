@@ -198,17 +198,18 @@ footer {
 .mas-productos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: center;
     margin: 2%;
 }
 
 .img-mas-productos {
-    border: solid 3px;
-    color: rgb(106, 219, 217);
+    border: solid 1px;
+    /* color: rgb(106, 219, 217); */
+    color: rgb(180, 180, 180);
     padding: 4px;
     margin: 2px;
-    border-radius: 100%;
+    border-radius: 10px;
     max-width: 100px;
 }
 
@@ -223,7 +224,7 @@ footer {
 
 /* Fin Estilos Más Productos */
 
-/* Estilos Almohadas */
+/* Estilos de Todos los Productos */
 .cont-img-principal {
     display: flex;
     justify-content: center;
@@ -287,7 +288,7 @@ footer {
     }
 }
 
-/* fin Estilos Almohadas */
+/* Fin Estilos de Todos los Productos */
 
 /* Presentacion */
 .img-quien-soy {
