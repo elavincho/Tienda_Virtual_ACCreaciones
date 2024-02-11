@@ -125,7 +125,7 @@ p {
 
 .img-producto {
     border: none;
-    border-radius: 20%;
+    border-radius: 0px;
 }
 
 .cont-btn-2col {
@@ -148,16 +148,31 @@ p {
 }
 
 /* Footer */
-footer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    color: white;
-    background-color: rgb(58, 203, 198);
-    line-height: 0.5;
-    font-size: 1rem;
+@media (min-width: 480px) {
+    .footer-pc {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: white;
+        background-color: rgb(58, 203, 198);
+        line-height: 0.5;
+        font-size: 1rem;
+    }
+
+    .footer-direccion{
+        min-width: 360px;
+    }
+
+    .footer-direccion p {
+        text-align: center;
+    }
+
+    .footer-celular {
+        display: none;
+    }
 }
+
 /* Fin Footer */
 
 .entrada-blog {
@@ -197,6 +212,9 @@ footer {
 }
 
 /* Estilos Más Productos */
+.articulos h3 {
+    margin: 5px;
+}
 
 .mas-productos a {
     text-decoration: none;
@@ -270,12 +288,9 @@ footer {
     /* transition: all 300ms; */
 }
 
-.img-prod-principal h2{
+.img-prod-principal h2 {
     margin: 5%;
 }
-/* .img-prod-principal img:hover {
-    transform: scale(1.3);
-} */
 
 .img-seleccion {
     display: flex;
@@ -380,7 +395,7 @@ footer {
         float: left;
         margin: 20px;
         padding: 10px;
-        
+
     }
 
     .presentacion p {
@@ -521,3 +536,131 @@ h4 {
 }
 
 /* Fin Productos en 3 columnas */
+
+/* Filtro Buscador */
+
+.filtro {
+    display: none;
+}
+
+/* Fin filtro buscador */
+
+/* Ubicación */
+
+.ubicacion {
+    border: solid 1px;
+    color: rgb(180, 180, 180);
+    margin: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Fin Ubicación */
+
+/* Menu Fijo*/
+
+
+@media (max-width: 480px) {
+
+
+    /* Menu Fijo Inicio*/
+    .inicio {
+        position: fixed;
+        bottom: 10px;
+        right: 85%;
+    }
+
+    /* Fin Menu Fijo Inicio*/
+
+    /* Menu Fijo Todos los productos*/
+    .all-products {
+        position: fixed;
+        bottom: 10px;
+        right: 65%;
+    }
+
+    /* Fin  Menu Fijo todos los productos*/
+
+
+
+    /* Menu Fijo Quien Soy*/
+    .about {
+        position: fixed;
+        bottom: 10px;
+        right: 45%;
+    }
+
+    /* Fin  Menu Fijo Quien Soy*/
+
+    /* Menu Fijo Mapa*/
+    .mapa {
+        position: fixed;
+        bottom: 10px;
+        right: 25%;
+    }
+
+    /* Fin  Menu Fijo Mapa*/
+
+    #btn-mas {
+        display: none;
+    }
+
+    /* Redes Sociales*/
+    .container-redes {
+        position: fixed;
+        bottom: 10px;
+        right: 5%;
+
+    }
+
+    .redes a,
+    .icon-mas2,
+    .inicio,
+    .all-products,
+    .about,
+    .mapa {
+        display: block;
+        text-decoration: none;
+        background-color: rgb(58, 203, 198);
+        color: white;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+
+        border-radius: 50%;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 4);
+        transition: all 500ms ease;
+    }
+
+    .redes a {
+        margin-bottom: -15px;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    /* ~ este signo con Alt +126 */
+    #btn-mas:checked~.redes a {
+        margin-bottom: 10px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .icon-mas2 {
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    #btn-mas:checked~.btn-mas .icon-mas2 {
+        transform: rotate(137deg);
+        font-size: 30px;
+    }
+
+    .footer-pc * {
+        display: none;
+    }
+
+}
+
+/* Fin Menu Fijo Redes Sociales*/
