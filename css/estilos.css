@@ -13,30 +13,19 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
 }
-
-nav h1 {
+/* Header */
+.header h1 {
     font-size: 2rem;
 }
 
-nav {
+.header {
     padding: 0.5rem;
     /* background-color: rgb(10, 187, 181); */
     background-color: rgb(58, 203, 198);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header p {
-    /* font-family: 'Dancing Script', 'Segoe Script'; */
-    color: rgb(58, 203, 198);
-    font-weight: bold;
-    line-height: 0.5;
-}
-
-.img-header {
-    margin: 0.2rem;
-    max-width: 30%;
-}
-
+/* Fin Header */
 main {
     padding: 1rem;
 }
@@ -77,7 +66,7 @@ p {
 
 .img-menu-circulo {
     border: solid 1px;
-    color: rgb(106, 219, 217);
+    color: rgb(10, 219, 217);
     padding: 3px;
     border-radius: 100%;
     max-width: 75px;
@@ -414,6 +403,8 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border: solid 1px;
+    color: rgb(180, 180, 180);
 }
 
 /* Fin 5 Motivos */
@@ -560,15 +551,23 @@ h4 {
 
 /* Menu Fijo*/
 
-
 @media (max-width: 480px) {
 
+    .footer-celular {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        background-color: white;
+        color: white;
+    }
 
     /* Menu Fijo Inicio*/
     .inicio {
         position: fixed;
         bottom: 10px;
-        right: 85%;
+        right: 82%;
     }
 
     /* Fin Menu Fijo Inicio*/
@@ -577,7 +576,7 @@ h4 {
     .all-products {
         position: fixed;
         bottom: 10px;
-        right: 65%;
+        right: 63%;
     }
 
     /* Fin  Menu Fijo todos los productos*/
@@ -588,7 +587,7 @@ h4 {
     .about {
         position: fixed;
         bottom: 10px;
-        right: 45%;
+        right: 43%;
     }
 
     /* Fin  Menu Fijo Quien Soy*/
@@ -597,7 +596,7 @@ h4 {
     .mapa {
         position: fixed;
         bottom: 10px;
-        right: 25%;
+        right: 23%;
     }
 
     /* Fin  Menu Fijo Mapa*/
@@ -624,11 +623,11 @@ h4 {
         text-decoration: none;
         background-color: rgb(58, 203, 198);
         color: white;
-        height: 50px;
-        width: 50px;
-        line-height: 50px;
+        height: 55px;
+        width: 55px;
+        line-height: 55px;
         text-align: center;
-
+        align-items: center;
         border-radius: 50%;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 4);
         transition: all 500ms ease;

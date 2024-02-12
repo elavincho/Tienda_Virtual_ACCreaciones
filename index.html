@@ -20,33 +20,29 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar border-bottom">
+    <!-- Heder -->
+    <header class="navbar border-bottom header">
         <div class="container-fluid">
             <!-- Imagen logo-->
             <img class="animate__animated animate__heartBeat img-nav" src="assets/img/icono_ac_blanco.png"
                 alt="icono_blanco" width="95" />
             <h1 class="masthead-heading mb-0" style="color: white; font-family:'Dancing Script', 'Segoe Script' ;">Tu
-                Tienda de Regalos</h1>
-
+                Tienda de Regalos
+            </h1>
+            <!-- Menu Hamburguesa -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Nuestros Diseños</a>
+                        <a class="nav-link active" aria-current="page" href="quien_soy.html">Quien Soy</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Nuestros Clientes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Tips de Emprendedora</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Proceso de la Tienda</a>
+                        <a class="nav-link active" href="#nuestros-clientes">Clientes</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -55,34 +51,16 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="mas_productos.html">Productos</a></li>
-                            <li><a class="dropdown-item" href="#">Testimonios</a></li>
-                            <li><a class="dropdown-item" href="#">Memes</a></li>
+                            <li><a class="dropdown-item" href="#mas-vendidos">Más Vendidos</a></li>
                             <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#">Combos</a></li>
-                    <li><a class="dropdown-item" href="#">Promos</a></li>
+                    <li><a class="dropdown-item" href="combos.html">Combos</a></li>
+                    <li><a class="dropdown-item" href="ubicacion.html">Ubicación</a></li>
                 </ul>
                 </li>
-
-                <form class="d-flex" role="search">
-                    <input class="buscador form-control me-2" id="buscador" name="buscador" type="search"
-                        placeholder="Buscar productos" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
             </div>
         </div>
-    </nav>
-    <!-- Fin Navbar -->
-
-    <!-- Header -->
-    <!-- <header class="masthead text-dark text-center">
-        <br>
-        <div class="container d-flex align-items-center flex-column">
-
-            <p class="animate__animated animate__bounceInLeft ">★ Sublimados ★ Impresiones ★</p>
-            <p class="animate__animated animate__bounceInLeft ">★ Personalizados ★</p>
-        </div>
-    </header> -->
+    </header>
     <!-- Fin Header -->
 
     <!-- Main -->
@@ -90,12 +68,6 @@
         <!-- Fila de Productos en Circulos -->
         <div class="overflow-x-scroll">
             <div class="menu-circulo">
-                <article>
-                    <a href="mas_productos.html">
-                        <img class="img-menu-circulo" src="assets/iconos/mas.png" alt="mas">
-                    </a>
-                    <h4>Todos los Productos</h4>
-                </article>
                 <article>
                     <a href="abecedario.html">
                         <img class="img-menu-circulo" src="assets/productos/abecedario/1.jpg" alt="abecedario">
@@ -249,53 +221,92 @@
                         <h4>Mochila de Tela</h4>
                     </a>
                 </article>
+                <article>
+                    <a href="mas_productos.html">
+                        <img class="img-menu-circulo" src="assets/iconos/bolso-blanco.png" alt="bolso-blanco">
+                    </a>
+                    <h4>Todos los Productos</h4>
+                </article>
             </div>
         </div>
         <!-- Fin Fila de Productos en Circulos -->
-        <br>
         <hr>
+        <!-- Estamos en tus Mejores Momentos -->
+        <h1 class="centrado">Estamos en ..</h1>
+        <h1 class="centrado">¡ tus Mejores Momentos !</h1>
+        <div class="cont-personalizado">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2500">
+                        <img src="assets/mejores_momentos/1.jpg" class="d-block w-100" alt="1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="assets/mejores_momentos/2.jpg" class="d-block w-100" alt="2">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="assets/mejores_momentos/3.jpg" class="d-block w-100" alt="3">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="assets/mejores_momentos/4.jpg" class="d-block w-100" alt="4">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="assets/mejores_momentos/5.jpg" class="d-block w-100" alt="5">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="assets/mejores_momentos/6.jpg" class="d-block w-100" alt="6">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="assets/mejores_momentos/7.jpg" class="d-block w-100" alt="7">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="assets/mejores_momentos/8.jpg" class="d-block w-100" alt="8">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="assets/mejores_momentos/9.jpg" class="d-block w-100" alt="9">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="assets/mejores_momentos/10.jpg" class="d-block w-100" alt="10">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fin Estamos en tus Mejores Momentos -->
         <br>
         <!-- Lista de Productos en 2 Columnas -->
         <h1 class="centrado">Productos Destacados</h1>
-        <br>
         <div class="contenedor dos-columnas">
             <article class="entrada-blog">
                 <a href="remera_poliester.html">
                     <h2>Remeras</h2>
                     <img class="img-producto" src="assets/productos/remeras_pol_blancas/1.jpg" alt="taza_caja">
-                    <h4>Contamos con una gran variedad de diseños. ¡Elegi la que mas te guste!</h4>
                 </a>
             </article>
             <article class="entrada-blog">
                 <a href="combos.html">
                     <h2>Combos</h2>
                     <img class="img-producto" src="assets/productos/combos/1.png" alt="combos">
-                    <h4>Podes crear tus propios Combos con los productos de nuesta Tienda.</h4>
                 </a>
             </article>
         </div>
-        <br>
+
         <div class="contenedor dos-columnas">
             <article class="entrada-blog">
                 <a href="kit_escolar.html">
                     <h2>Kit Escolar</h2>
                     <img class="img-producto" src="assets/productos/kit_escolar/1.jpg" alt="kit_escolar">
-                    <h4>Amplia variedad de productos Escolares ¡Combinalos!</h4>
                 </a>
             </article>
             <article class="entrada-blog">
                 <a href="zapatillas.html">
                     <h2>Zapatillas</h2>
                     <img class="img-producto" src="assets/productos/zapatillas/3.jpg" alt="zapatillas">
-                    <h4>Personalizadas con la imagen que vos quieras!!</h4>
                 </a>
             </article>
         </div>
         <!-- Fin Productos en 2 Columnas -->
         <br>
         <!-- 5 Razones para elegir un Regalo Personalizado-->
-        <hr>
-        <br>
         <div class="cont-personalizado">
             <!-- Carrousel -->
             <div id="carouselExampleIndicators" class="carousel slide">
@@ -351,13 +362,12 @@
             </div>
             <!-- Fin carousel -->
         </div>
-        <br>
+
         <!-- Fin 5 Razones para elegir un Regalo Personalizado-->
-        <hr>
+        <br>
         <!-- Productos con Enlace Estirado -->
-        <br>
-        <h1 class="centrado">¡Más Vendidos!</h1>
-        <br>
+
+        <h1 class="centrado" id="mas-vendidos">¡Más Vendidos!</h1>
         <div class="contenedor dos-columnas enlace-estirado">
             <div class="d-flex position-relative cont-enl-estirado">
                 <img src="assets/productos/blusas/1.jpg" class="flex-shrink-0 me-3 img-enl-estirado" alt="blusas">
@@ -385,7 +395,7 @@
                 <img src="assets/productos/billetera_con_porta_celular/1.jpg"
                     class="flex-shrink-0 me-3 img-enl-estirado" alt="blusas">
                 <div>
-                    <h2 class="mt-0">Billetera con Porta Celular</h2>
+                    <h2 class="mt-0">Billetera para Dama con Porta Celular</h2>
                     <h4>Un Regalo ideal. Billeteras con Porta Celular con el diseño que vos quieras.</h4>
                     <a href="billetera.html" class="stretched-link"></a>
                 </div>
@@ -401,82 +411,64 @@
                 </div>
             </div>
         </div>
-        <br>
-        <hr>
         <!-- Fin Productos con Enlace Estirado-->
-
+        <br>
         <!-- Nuestros Clientes -->
-        <br>
-        <h1 class="centrado">¡Nuestros Clientes!</h1>
-        <br>
+        <h1 class="centrado" id="nuestros-clientes">¡Nuestros Clientes!</h1>
         <!-- Carrousel Clientes -->
         <div class="cont-personalizado">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="100">
+                    <div class="carousel-item active" data-bs-interval="1800">
                         <img src="assets/clientes/1.png" class="d-block w-100" alt="1">
                     </div>
-                    <div class="carousel-item" data-bs-interval="200">
+                    <div class="carousel-item" data-bs-interval="1800">
                         <img src="assets/clientes/2.png" class="d-block w-100" alt="2">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="1800">
                         <img src="assets/clientes/3.png" class="d-block w-100" alt="3">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="1800">
                         <img src="assets/clientes/4.png" class="d-block w-100" alt="4">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="1800">
                         <img src="assets/clientes/5.png" class="d-block w-100" alt="5">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="1800">
                         <img src="assets/clientes/6.png" class="d-block w-100" alt="6">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="1800">
                         <img src="assets/clientes/7.png" class="d-block w-100" alt="7">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="1800">
                         <img src="assets/clientes/8.png" class="d-block w-100" alt="8">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="1800">
                         <img src="assets/clientes/9.png" class="d-block w-100" alt="9">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="1800">
                         <img src="assets/clientes/10.png" class="d-block w-100" alt="10">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="1800">
                         <img src="assets/clientes/11.png" class="d-block w-100" alt="11">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="1800">
                         <img src="assets/clientes/12.png" class="d-block w-100" alt="12">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="1800">
                         <img src="assets/clientes/13.png" class="d-block w-100" alt="13">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="1800">
                         <img src="assets/clientes/14.png" class="d-block w-100" alt="14">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
             <!-- Fin Carousel Clientes -->
         </div>
-
         <!-- Fin Nuestros Clientes -->
-        <br>
-        <hr>
         <br>
         <!-- Productos en 3 columnas -->
         <h1 class="centrado">¡Podría Interesarte!</h1>
-        <br>
         <div class="centrado">
             <section class="prod-3-col">
                 <article class="tarjeta-3-col">
@@ -573,25 +565,59 @@
         </div>
         <!-- Fin Productos en 3 columnas -->
 
-        <!-- Contenedor Flecha Subir -->
-        <div class="cont-flecha">
-            <a href="#">
-                <img class="flecha-arriba" src="assets/iconos/flecha-arriba.png" alt="arriba">
-            </a>
-        </div>
-        <!-- Fin Contenedor Flecha Subir -->
+
     </main>
     <!-- Fin Main -->
 
-    <!-- Footer -->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <a href="#" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+    <!-- Footer Celular -->
+
+    <footer class="footer-celular">
+        <div class="inicio">
+            <a href="index.html"><img src="assets/iconos/inicio.png" alt="inicio"></a>
+        </div>
+        <div class="all-products">
+            <a href="mas_productos.html"><img src="assets/iconos/all-products.png" alt="todos_los_productos"></a>
+        </div>
+        <div class="about">
+            <a href="quien_soy.html"><img src="assets/iconos/about.png" alt="quien-soy"></a>
+        </div>
+        <div class="mapa">
+            <a href="ubicacion.html" class="icon-ubicacion"><img src="assets/iconos/ubicacion-blanco.png"
+                    alt="ubicacion"></a>
+        </div>
+        <!-- Menu Fijo Redes Sociales -->
+        <div class="container-redes">
+            <input type="checkbox" id="btn-mas">
+            <div class="redes">
+                <a href="https://api.whatsapp.com/send?phone=595981329452&text=Hola%2C%20quisiera%20hacer%20una%20consulta"
+                    class="icon-whatsapp" target="_blank"><img src="assets/iconos/whatsapp_blanco.png"
+                        alt="whatsapp"></a>
+                <a href="https://www.facebook.com/accreaciones20" class="icon-facebook" target="_blank"><img
+                        src="assets/iconos/facebook-blanco.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/accreaciones20/" class="icon-instagram" target="_blank"><img
+                        src="assets/iconos/instagram-blanco.png" alt="instagram"></a>
+                <a href="https://www.tiktok.com/@accreaciones20?refer=embed" class="icon-tiktok" target="_blank"><img
+                        src="assets/iconos/tik-tok-blanco.png" alt="tiktok"></a>
+
+            </div>
+            <div class="btn-mas">
+                <label for="btn-mas" class="icon-mas2"><img src="assets/iconos/mas.png" alt="mas"></label>
+            </div>
+        </div>
+        <!-- Fin Menu Fijo Redes Sociales -->
+    </footer>
+    <!-- Fin Footer Celular -->
+
+    <!-- Footer PC -->
+    <footer class="footer-pc d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <a href="index.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
             <img src="assets/img/icono_ac_blanco.png" alt="logo" width="85">
         </a>
-        <div style="min-width: 360px;">
-            <p style="text-align: center;">Cerro Cora c/ Hernandarias - Cnel. Oviedo - Py</p>
-            <p style="text-align: center;">© Copyright 2024 - AC Creaciones</p>
-            <p style="text-align: center;">Todos los derechos reservados</p>
+        <br>
+        <div class="footer-direccion">
+            <p>Cerro Cora c/ Hernandarias - Cnel. Oviedo - Py</p>
+            <p>© Copyright 2024 - AC Creaciones</p>
+            <p>Todos los derechos reservados</p>
         </div>
         <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
             <li class="ms-3">
@@ -622,7 +648,9 @@
             </li>
         </ul>
     </footer>
-    <!-- Fin Footer -->
+
+    <!-- Fin footer PC -->
+
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
